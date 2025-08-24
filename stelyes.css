@@ -1,0 +1,48 @@
+h1 {
+    font-size: 48px;
+    color: rgb(199, 198, 202);
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    color: beige;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    color: beige;
+    text-align: left;
+    margin: 20px 0;
+}
+
+a {
+    color: aquamarine;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: opacity 1.5s ease, transform 1.5s ease, filter 1.5s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
